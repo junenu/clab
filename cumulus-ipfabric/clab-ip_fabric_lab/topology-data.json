@@ -1,0 +1,407 @@
+{
+  "name": "ip_fabric_lab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-c8922c8fc5ed",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "2001:172:20:20::/64",
+        "ipv6-gw": "2001:172:20:20::1",
+        "mtu": "1500",
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "l1": {
+      "index": "0",
+      "shortname": "l1",
+      "longname": "clab-ip_fabric_lab-l1",
+      "fqdn": "l1.ip_fabric_lab.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/l1",
+      "kind": "cvx",
+      "image": "networkop/cx:4.4.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c8922c8fc5ed",
+        "clab-node-group": "",
+        "clab-node-kind": "cvx",
+        "clab-node-lab-dir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/l1",
+        "clab-node-name": "l1",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab-ip-fabric/topo-ipfabric-1.yml",
+        "containerlab": "ip_fabric_lab"
+      }
+    },
+    "l2": {
+      "index": "1",
+      "shortname": "l2",
+      "longname": "clab-ip_fabric_lab-l2",
+      "fqdn": "l2.ip_fabric_lab.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/l2",
+      "kind": "cvx",
+      "image": "networkop/cx:4.4.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c8922c8fc5ed",
+        "clab-node-group": "",
+        "clab-node-kind": "cvx",
+        "clab-node-lab-dir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/l2",
+        "clab-node-name": "l2",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab-ip-fabric/topo-ipfabric-1.yml",
+        "containerlab": "ip_fabric_lab"
+      }
+    },
+    "l3": {
+      "index": "2",
+      "shortname": "l3",
+      "longname": "clab-ip_fabric_lab-l3",
+      "fqdn": "l3.ip_fabric_lab.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/l3",
+      "kind": "cvx",
+      "image": "networkop/cx:4.4.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c8922c8fc5ed",
+        "clab-node-group": "",
+        "clab-node-kind": "cvx",
+        "clab-node-lab-dir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/l3",
+        "clab-node-name": "l3",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab-ip-fabric/topo-ipfabric-1.yml",
+        "containerlab": "ip_fabric_lab"
+      }
+    },
+    "l4": {
+      "index": "3",
+      "shortname": "l4",
+      "longname": "clab-ip_fabric_lab-l4",
+      "fqdn": "l4.ip_fabric_lab.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/l4",
+      "kind": "cvx",
+      "image": "networkop/cx:4.4.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c8922c8fc5ed",
+        "clab-node-group": "",
+        "clab-node-kind": "cvx",
+        "clab-node-lab-dir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/l4",
+        "clab-node-name": "l4",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab-ip-fabric/topo-ipfabric-1.yml",
+        "containerlab": "ip_fabric_lab"
+      }
+    },
+    "s1": {
+      "index": "4",
+      "shortname": "s1",
+      "longname": "clab-ip_fabric_lab-s1",
+      "fqdn": "s1.ip_fabric_lab.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/s1",
+      "kind": "cvx",
+      "image": "networkop/cx:4.4.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c8922c8fc5ed",
+        "clab-node-group": "",
+        "clab-node-kind": "cvx",
+        "clab-node-lab-dir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/s1",
+        "clab-node-name": "s1",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab-ip-fabric/topo-ipfabric-1.yml",
+        "containerlab": "ip_fabric_lab"
+      }
+    },
+    "s2": {
+      "index": "5",
+      "shortname": "s2",
+      "longname": "clab-ip_fabric_lab-s2",
+      "fqdn": "s2.ip_fabric_lab.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/s2",
+      "kind": "cvx",
+      "image": "networkop/cx:4.4.0",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c8922c8fc5ed",
+        "clab-node-group": "",
+        "clab-node-kind": "cvx",
+        "clab-node-lab-dir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/s2",
+        "clab-node-name": "s2",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab-ip-fabric/topo-ipfabric-1.yml",
+        "containerlab": "ip_fabric_lab"
+      }
+    },
+    "sv11": {
+      "index": "6",
+      "shortname": "sv11",
+      "longname": "clab-ip_fabric_lab-sv11",
+      "fqdn": "sv11.ip_fabric_lab.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/sv11",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c8922c8fc5ed",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/sv11",
+        "clab-node-name": "sv11",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab-ip-fabric/topo-ipfabric-1.yml",
+        "containerlab": "ip_fabric_lab"
+      }
+    },
+    "sv21": {
+      "index": "7",
+      "shortname": "sv21",
+      "longname": "clab-ip_fabric_lab-sv21",
+      "fqdn": "sv21.ip_fabric_lab.io",
+      "group": "",
+      "labdir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/sv21",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.5.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c8922c8fc5ed",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ubuntu/clab-ip-fabric/clab-ip_fabric_lab/sv21",
+        "clab-node-name": "sv21",
+        "clab-node-type": "",
+        "clab-topo-file": "/home/ubuntu/clab-ip-fabric/topo-ipfabric-1.yml",
+        "containerlab": "ip_fabric_lab"
+      }
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "s1",
+        "interface": "swp1",
+        "mac": "aa:c1:ab:ad:a6:66",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l1",
+        "interface": "swp53",
+        "mac": "aa:c1:ab:76:69:ff",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "s2",
+        "interface": "swp1",
+        "mac": "aa:c1:ab:20:61:cb",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l1",
+        "interface": "swp54",
+        "mac": "aa:c1:ab:f2:fc:1d",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "s1",
+        "interface": "swp2",
+        "mac": "aa:c1:ab:b8:4d:6d",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l2",
+        "interface": "swp53",
+        "mac": "aa:c1:ab:bb:fd:b4",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "s2",
+        "interface": "swp2",
+        "mac": "aa:c1:ab:88:e6:38",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l2",
+        "interface": "swp54",
+        "mac": "aa:c1:ab:b3:44:07",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "s1",
+        "interface": "swp3",
+        "mac": "aa:c1:ab:a6:c5:40",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l3",
+        "interface": "swp53",
+        "mac": "aa:c1:ab:26:79:ea",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "s2",
+        "interface": "swp3",
+        "mac": "aa:c1:ab:fb:bb:be",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l3",
+        "interface": "swp54",
+        "mac": "aa:c1:ab:1b:8b:09",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "s1",
+        "interface": "swp4",
+        "mac": "aa:c1:ab:04:a9:10",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l4",
+        "interface": "swp53",
+        "mac": "aa:c1:ab:0d:1d:40",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "s2",
+        "interface": "swp4",
+        "mac": "aa:c1:ab:1f:bb:24",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l4",
+        "interface": "swp54",
+        "mac": "aa:c1:ab:66:17:71",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l1",
+        "interface": "swp1",
+        "mac": "aa:c1:ab:9f:bf:f2",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sv11",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:26:57:e0",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l2",
+        "interface": "swp1",
+        "mac": "aa:c1:ab:44:5e:23",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sv11",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:9c:7d:c3",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l3",
+        "interface": "swp1",
+        "mac": "aa:c1:ab:7c:ad:cc",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sv21",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:9d:ea:77",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l4",
+        "interface": "swp1",
+        "mac": "aa:c1:ab:11:2c:ac",
+        "peer": "z"
+      },
+      "z": {
+        "node": "sv21",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:d4:7e:a2",
+        "peer": "a"
+      }
+    }
+  ]
+}

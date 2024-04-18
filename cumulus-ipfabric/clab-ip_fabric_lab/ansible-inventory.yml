@@ -1,0 +1,22 @@
+all:
+  children:
+    cvx:
+      hosts:
+        clab-ip_fabric_lab-l1:
+          ansible_host: 172.20.20.5
+        clab-ip_fabric_lab-l2:
+          ansible_host: 172.20.20.6
+        clab-ip_fabric_lab-l3:
+          ansible_host: 172.20.20.8
+        clab-ip_fabric_lab-l4:
+          ansible_host: 172.20.20.4
+        clab-ip_fabric_lab-s1:
+          ansible_host: 172.20.20.7
+        clab-ip_fabric_lab-s2:
+          ansible_host: 172.20.20.9
+    linux:
+      hosts:
+        clab-ip_fabric_lab-sv11:
+          ansible_host: 172.20.20.2
+        clab-ip_fabric_lab-sv21:
+          ansible_host: 172.20.20.3
