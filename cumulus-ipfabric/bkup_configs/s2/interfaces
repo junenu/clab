@@ -1,0 +1,30 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+    address 10.0.0.2/32
+
+auto swp1
+iface swp1
+    address 10.21.0.1/30
+
+auto swp2
+iface swp2
+    address 10.22.0.1/30
+
+auto swp3
+iface swp3
+    address 10.23.0.1/30
+
+auto swp4
+iface swp4
+    address 10.24.0.1/30
+
+auto mgmt
+iface mgmt
+    vrf-table auto
+
+auto eth0
+iface eth0  inet dhcp
+    vrf mgmt
+
+source /etc/network/interfaces.d/*

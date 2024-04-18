@@ -1,0 +1,60 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+    address 10.1.0.4/32
+
+auto swp1
+iface swp1
+    bridge-vids 200 300
+
+auto swp53
+iface swp53
+    address 10.14.0.2/30
+
+auto swp54
+iface swp54
+    address 10.24.0.2/30
+
+auto bridge
+iface bridge
+    bridge-ports vni10200 swp1 vni10100 vni10300
+    bridge-vids 100 200 300
+    bridge-vlan-aware yes
+
+auto mgmt
+iface mgmt
+    vrf-table auto
+
+auto eth0
+iface eth0  inet dhcp
+    vrf mgmt
+
+source /etc/network/interfaces.d/*
+
+auto vni10100
+iface vni10100
+    bridge-access 100
+    bridge-learning off
+    mstpctl-bpduguard yes
+    mstpctl-portbpdufilter yes
+    vxlan-id 10100
+    vxlan-local-tunnelip 10.1.0.4
+
+auto vni10200
+iface vni10200
+    bridge-access 200
+    bridge-learning off
+    mstpctl-bpduguard yes
+    mstpctl-portbpdufilter yes
+    vxlan-id 10200
+    vxlan-local-tunnelip 10.1.0.4
+
+auto vni10300
+iface vni10300
+    bridge-access 300
+    bridge-learning off
+    mstpctl-bpduguard yes
+    mstpctl-portbpdufilter yes
+    vxlan-id 10300
+    vxlan-local-tunnelip 10.1.0.4
+
